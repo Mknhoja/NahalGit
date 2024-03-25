@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    font family: 'Noto Sans', sans-serif;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cta .btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #cc5500;
+}
+
+/* CSS for Hero Section */
+.hero {
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #fff; /* White text color */
+    padding: 200px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.hero .container {
+    max-width: 800px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.hero h1 {
+    font-size: 36px; /* Large font size for heading */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.hero p {
+    font-size: 20px; /* Font size for paragraph */
+    margin-bottom: 30px; /* Bottom margin for spacing */
+}
+
+.hero .btn {
+    padding: 15px 30px; /* Padding for button */
+    background-color: #ff6600; /* Orange button background color */
+    color: #fff; /* White button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.hero .btn:hover {
+    background-color: #cc5500; /* Darker orange on hover */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .hero p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+    
+    .hero .btn {
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+}
+
+/* CSS for Services Section */
+.services {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 100px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.services .container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.services h2 {
+    font-size: 30px; /* Large font size for section title */
+    margin-bottom: 70px; /* Bottom margin for spacing */
+}
+
+.service {
+    margin-bottom: 50px; /* Bottom margin for spacing between services */
+}
+
+.service img {
+    max-width: 80%; /* Make sure image fits container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.service h3 {
+    font-size: 24px; /* Font size for service title */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+.service p {
+    font-size: 18px; /* Font size for service description */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .services h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .service h3 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+    
+    .service p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* CSS for About Section */
+.about {
+    padding: 100px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.about .container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.about h2 {
+    font-size: 36px; /* Large font size for section title */
+    margin-bottom: 50px; /* Bottom margin for spacing */
+}
+
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    flex-wrap: wrap; /* Allow content to wrap to the next line if needed */
+}
+
+.about-content img {
+    max-width: 70%; /* Make sure image doesn't exceed 50% of container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 70px; /* Right margin for spacing */
+}
+
+.about-content p {
+    font-size: 18px; /* Font size for paragraph */
+    text-align: left; /* Left align text */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .about h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .about-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center; /* Center align text */
+    }
+    
+    .about-content img {
+        max-width: 100%; /* Make image occupy full container width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Bottom margin for spacing */
+    }
+}
+
+/* CSS for Projects Section */
+.projects {
+    padding: 100px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.projects .container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.projects h2 {
+    font-size: 36px; /* Large font size for section title */
+    margin-bottom: 50px; /* Bottom margin for spacing */
+}
+
+.project {
+    margin-bottom: 50px; /* Bottom margin for spacing between projects */
+}
+
+.project img {
+    max-width: 100%; /* Make sure image fits container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.project h3 {
+    font-size: 24px; /* Font size for project title */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+.project p {
+    font-size: 18px; /* Font size for project description */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .projects h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project h3 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* CSS for Projects Section */
+.projects {
+    padding: 40px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.projects .container {
+    max-width: 1400px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.projects h2 {
+    font-size: 36px; /* Large font size for section title */
+    margin-bottom: 50px; /* Bottom margin for spacing */
+}
+
+.project {
+    margin-bottom: 50px; /* Bottom margin for spacing between projects */
+}
+
+.project img {
+    max-width: 100%; /* Make sure image fits container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.project h3 {
+    font-size: 24px; /* Font size for project title */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+.project p {
+    font-size: 18px; /* Font size for project description */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .projects h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project h3 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+
+
+/* CSS for Projects Section */
+.projects {
+    padding: 40px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.projects .container {
+    max-width: 1400px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.projects h2 {
+    font-size: 36px; /* Large font size for section title */
+    margin-bottom: 50px; /* Bottom margin for spacing */
+}
+
+.project {
+    margin-bottom: 50px; /* Bottom margin for spacing between projects */
+}
+
+.project img {
+    max-width: 100%; /* Make sure image fits container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.project h3 {
+    font-size: 24px; /* Font size for project title */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+.project p {
+    font-size: 18px; /* Font size for project description */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .projects h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project h3 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* CSS for Footer Section */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 50px 0; /* Padding top and bottom */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-item {
+    flex: 1; /* Equal width for each item */
+    margin-right: 20px; /* Right margin between items */
+}
+
+.footer-item:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+}
+
+.footer-item h3 {
+    font-size: 20px; /* Font size for section titles */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+}
+
+.footer-item p {
+    font-size: 16px; /* Font size for paragraph */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.social-icons {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+
+.social-icons li {
+    display: inline-block; /* Display icons horizontally */
+    margin-right: 10px; /* Right margin between icons */
+}
+
+.social-icons li:last-child {
+    margin-right: 0; /* Remove right margin for the last icon */
+}
+
+.social-icons a {
+    color: #fff; /* White icon color */
+    font-size: 24px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Additional CSS for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .footer-item {
+        margin-right: 0; /* Remove right margin for items */
+        margin-bottom: 30px; /* Bottom margin between items */
+        text-align: center; /* Center align text */
+    }
+}
